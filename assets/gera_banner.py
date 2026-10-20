@@ -1,6 +1,9 @@
 """Gera o banner animado do perfil (hero-dark.svg e hero-light.svg).
 
     python3 assets/gera_banner.py
+
+Depois de regerar, suba o ?v=N das URLs do banner no README: o GitHub guarda a
+imagem em cache pela URL e, sem trocar a URL, continua mostrando a versão antiga.
 """
 
 import os
