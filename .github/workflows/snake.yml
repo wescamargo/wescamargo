@@ -1,8 +1,8 @@
-name: Cobra de contribuições
+name: Contribution snake
 
 on:
   schedule:
-    - cron: "0 9 * * *" # todo dia, 06h BRT
+    - cron: "0 9 * * *" # daily, 06:00 BRT
   workflow_dispatch:
   push:
     branches: [main]
@@ -18,8 +18,8 @@ jobs:
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          # Sem SNAKE_TOKEN (PAT classico com escopo read:user) so as contribuicoes
-          # publicas aparecem; com ele, as privadas tambem entram na contagem.
+          # Without SNAKE_TOKEN (classic PAT with read:user) only public contributions
+          # are counted; with it, private ones are included too.
           github_token: ${{ secrets.SNAKE_TOKEN || github.token }}
           outputs: |
             dist/github-snake.svg?palette=github-light&color_snake=#dc36c0
