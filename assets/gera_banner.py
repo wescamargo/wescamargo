@@ -29,8 +29,8 @@ LINHAS = [
     (False, "head of data engineering @ cienty", "#cdc2d4"),
     (True, "terraform apply -auto-approve", "#f6f1f8"),
     (False, "✓ bronze → silver → gold", "#3ee08f"),
-    (True, 'claude "cria uma gold de preço por EAN"', "#f6f1f8"),
-    (False, "✓ SQL + Terraform + PR aberto", "#3ee08f"),
+    (True, 'claude "gold table: avg price by EAN"', "#f6f1f8"),
+    (False, "✓ SQL + Terraform + PR opened", "#3ee08f"),
     (True, "", "#f6f1f8"),
 ]
 
@@ -62,7 +62,7 @@ def terminal():
 def svg(t):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="titulo desc">
 <title id="titulo">Weslei Camargo</title>
-<desc id="desc">Weslei Camargo, Head of Data Engineering na Cienty.</desc>
+<desc id="desc">Weslei Camargo, Head of Data Engineering at Cienty.</desc>
 <defs>
   <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{t["bg1"]}"/><stop offset="1" stop-color="{t["bg2"]}"/></linearGradient>
   <linearGradient id="mag" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5ce1"/><stop offset=".55" stop-color="#dc36c0"/><stop offset="1" stop-color="#8b3dff"/></linearGradient>
@@ -105,11 +105,10 @@ def svg(t):
   <g class="fade" style="animation-delay:.1s"><text x="60" y="178" class="nome">Weslei Camargo</text></g>
   <g class="fade" style="animation-delay:.22s"><text x="64" y="222" class="cargo">Head of Data Engineering</text></g>
   <g class="fade" style="animation-delay:.34s">
-    <text x="64" y="266" class="sub">Transformo dado cru em decisão.</text>
-    <text x="64" y="292" class="sub" style="fill:{t["mudo"]}">Turning raw data into decisions.</text>
+    <text x="64" y="268" class="sub">Turning raw data into decisions.</text>
   </g>
   <g class="fade" style="animation-delay:.46s">
-    <text x="64" y="336" class="meta mono">BigQuery · Terraform · Python · SQL · Azure · Claude Code</text>
+    <text x="64" y="318" class="meta mono">BigQuery · Terraform · Python · SQL · Azure · Claude Code</text>
   </g>
 
   <g class="fade" style="animation-delay:.3s">
